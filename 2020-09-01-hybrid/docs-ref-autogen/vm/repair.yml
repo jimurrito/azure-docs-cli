@@ -31,6 +31,7 @@ directCommands:
                         [--repair-vm-name]
                         [--unlock-encrypted-vm]
                         [--yes]
+                        [--no]
   examples:
   - summary: |-
       Create a repair VM
@@ -86,6 +87,10 @@ directCommands:
     defaultValue: "False"
     summary: |-
       Option to skip prompt for associating public ip and confirm yes to it in no Tty mode.
+  - name: --no
+    defaultValue: "False"
+    summary: |-
+      Option to skip prompt for associating public ip and confirm no to it in no Tty mode.
 - uid: az_vm_repair_list-scripts
   name: az vm repair list-scripts
   summary: |-
